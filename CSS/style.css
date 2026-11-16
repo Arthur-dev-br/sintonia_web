@@ -589,15 +589,13 @@ PARTE GABRIELE
     font-family: var(--font-ti­tulo);
 }
 
-.grupo-card,
-.linha-tempo ol {
+.grupo-card {
     display: grid;
-    grid-template-columns: repeat(4, minmax(220px, 250px));
+    grid-template-columns: repeat(3, minmax(220px, 250px));
     justify-content: center;
-    gap: 60px;
+    gap: 40px;
     align-items: start;
 }
-
 .card-equipe {
     position: relative;
     width: 100%;
@@ -1197,7 +1195,7 @@ PARTE GABRIELE
 
 
 .carrossel .slick-slide>div {
-    height: 35%;
+    height: 40%;
 }
 
 .carrossel article {
@@ -1214,12 +1212,12 @@ PARTE GABRIELE
 }
 
 .box1 {
-    background-image: url(../assets/atlas.jpg);
+    background-image: url(../assets/Pingo\ Decor.png);
 
 }
 
 .box2 {
-    background-image: url(../assets/anamalis.png);
+    background-image: url(../assets/Pedreiro.png);
 
 }
 
@@ -1229,7 +1227,7 @@ PARTE GABRIELE
 }
 
 .box4 {
-    background-image: url(../assets/rosa-fisio.png);
+    background-image: url(../assets/Projeto\ jhown.png);
 
 }
 
