@@ -4,7 +4,7 @@
             <div class="texto">
 
                 <h3>
-                    <img class="logo" src="assets/titulo.png" alt="titulo logo sintoniaweb">
+                    <img class="logo" src="assets/logo-completa-para-fundo-escuro.svg" alt="Logo SintoniaWeb">
                 </h3>
                 <p>A SintoniaWeb é uma agência de desenvolvimento web dedicada a criar soluções digitais sob medida,
                     sempre alinhadas aos objetivos de cada cliente. Nosso nome reflete nossa essência: “Sintonia”
@@ -25,9 +25,9 @@
                 <div class="card">
 
                     <article>
-                        <img src="assets/foguete-gradiente-azulroxo.png" alt="foguete">
-                        <h4>Missao</h4>
-                        <p>Nossa missão é criar uma conexão entre a equipe o os clientes para desenvolver o melhor
+                        <img src="assets/missao.png" alt="Missão">
+                        <h4>Missão</h4>
+                        <p>Nossa missão é criar uma conexão entre a equipe e os clientes para desenvolver o melhor
                             projeto possível com suas preferências.</p>
                     </article>
                 </div>
@@ -35,7 +35,7 @@
 
                 <div class="card">
                     <article>
-                        <img src="assets/foguete-gradiente-azulroxo.png" alt="foguete">
+                        <img src="assets/visualizar.png" alt="Visão">
                         <h4>Visão</h4>
                         <p>Nossa visão para futuro é desenvolver nossas habilidades técnicas e comportamentais para
                             conseguir entregar o melhor projeto para nosso cliente e introduzi-lo no mundo digital com
@@ -45,7 +45,7 @@
 
                 <div class="card">
                     <article>
-                        <img src="assets/foguete-gradiente-azulroxo.png" alt="foguete">
+                        <img src="assets/valor.png" alt="Valores">
                         <h4>Valores</h4>
                         <p>Nossos valores são conexão, parceria, transparência, compromisso, criatividade e excelência.
                             Eles orientam nosso trabalho na criação de soluções personalizadas, resultados de qualidade
@@ -56,7 +56,7 @@
                 <div class="card">
 
                     <article>
-                        <img src="assets/foguete-gradiente-azulroxo.png" alt="foguete">
+                        <img src="assets/projeto.png" alt="Projeto">
                         <h4>Projeto sob medida</h4>
                         <p>Criamos projetos exclusivos que unem criatividade, funcionalidade e tecnologia para entregar
                             resultados alinhados aos objetivos de cada cliente</p>
@@ -66,7 +66,7 @@
 
                 <div class="card">
                     <article>
-                        <img src="assets/foguete-gradiente-azulroxo.png" alt="foguete">
+                        <img src="assets/solucao.png" alt="Solução">
                         <h4>Soluções estratégicas</h4>
                         <p>Desenvolvemos projetos que unem design, tecnologia e estratégia para fortalecer a presença
                             digital e impulsionar o crescimento de cada cliente.</p>
@@ -75,7 +75,7 @@
 
                 <div class="card">
                     <article>
-                        <img src="assets/foguete-gradiente-azulroxo.png" alt="foguete">
+                        <img src="assets/compromisso.png" alt="Compromisso">
                         <h4>Compromisso com resultados</h4>
                         <p>Atuamos com transparência, qualidade e dedicação em todas as etapas, garantindo um processo
                             colaborativo e entregas que geram valor para o negócio.</p>

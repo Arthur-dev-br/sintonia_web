@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 64" width="960" height="640" role="img" aria-label="Sintonia-Web">
+<g fill="none" stroke="#35F28B" stroke-linecap="round" stroke-linejoin="round">
+<path stroke-width="4.5" d="M22 14 L8 32 L22 50"/>
+<path stroke-width="4.5" d="M74 14 L88 32 L74 50"/>
+<path stroke-width="3.5" d="M28 32 C31 12 35 12 38 32 S44 50 47 32 S52 24 55 32 S59 36 62 32 L64 32"/>
+</g>
+<circle cx="68" cy="32" r="3.6" fill="#FFB347"/>
+</svg>

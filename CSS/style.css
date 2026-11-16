@@ -89,10 +89,10 @@ body>header {
 }
 
 body>header h1 {
-    background-image: url(../icons/logo.png);
+    background-image: url(../assets/simbolo-para-fundo-escuro.svg);
     background-size: cover;
     height: 95px;
-    width: 80px;
+    width: 150px;
     text-indent: -9999px;
     margin: 15px 0;
 }
@@ -505,11 +505,8 @@ body>header ul li a:hover {
 }
 
 .sobre .card img {
-
-    background-color: #e6e6ea;
     border-radius: 12px;
     padding: 5px;
-
     width: 40px;
     height: auto;
     display: flex;
@@ -1903,12 +1900,12 @@ body > header ul li a:hover {
 }
 
 .sobre {
-    background: var(--cor-secao-clara) !important;
+    background: var(--cor-superficie) !important;
     color: var(--cor-fundo);
 }
 
 .sobre .texto p {
-    color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
 }
 
 .sobre .card article {
@@ -2099,3 +2096,10 @@ body > header ul li a:hover {
     -webkit-text-fill-color: var(--cor-primaria);
     -webkit-text-stroke: 0;
 }
+
+/* Evita a rolagem horizontal causada por elementos com largura baseada em 100vw. */
+html, body {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
