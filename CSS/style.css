@@ -1,19 +1,44 @@
-/* TEXTO */
-@import url("https://use.typekit.net/nfc5isf.css");
-
-/* TÍTULO */
-@import url("https://use.typekit.net/iuf2lhq.css");
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-/* SPAN */
-
+/* Fontes locais */
 @font-face {
-    font-family: "jet";
-    src: url(../fonts/JetBrainsMono-VariableFont_wght.ttf);
+    font-family: "Outfit";
+    src: url("../fonts/Outfit-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300 900;
+    font-display: swap;
 }
 
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("../fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../fonts/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../fonts/JetBrainsMono-Italic-VariableFont_wght.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 100 800;
+    font-display: swap;
+}
 p {
+    font-family: var(--font-texto);
+}
+
+h1, h2, h3 {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+button {
     font-family: var(--font-texto);
 }
 
@@ -22,28 +47,36 @@ html{
 }
 
 :root {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Outfit", Arial, Helvetica, sans-serif;
 
-    color: #ffffff;
-    --cor-roxo-base: #5a23b4;
-    --cor-roxo-escuro: #2f2554;
-    --cor-roxo-medio: #5327a7;
-    --cor-roxo-suave: #f4f0fb;
-    --cor-roxo-suave-hover: #efe7ff;
-    --cor-acento: #f4c95d;
-    --cor-acento-forte: #e8b84d;
-    --cor-acento-suave: #fff3cc;
-    --cor-texto-escuro: #241d33;
-    --cor-texto-medio: #43395c;
-    --font-texto: 'Inter', sans-serif;
-    --font-título: 'manop-variable', sans-serif;
-    --fonte-nav: 'Inter', sans-serif;
-    --fonte-span: 'jet', sans-serif;
-    --dark: #0c0c0c;
-    --white: #fff;
-    --purple: #5959ff;
-    --gray: #949494;
-    --gray2: #cccccc;
+    color: #EEF2EA;
+    --cor-fundo: #0E1713;
+    --cor-superficie: #16221C;
+    --cor-borda: #243229;
+    --cor-primaria: #C8F560;
+    --cor-secundaria: #FF7A59;
+    --cor-texto-principal: #EEF2EA;
+    --cor-texto-secundario: #9BAA9F;
+    --cor-secao-clara: #F2EEE3;
+    --cor-roxo-base: #C8F560;
+    --cor-roxo-escuro: #0E1713;
+    --cor-roxo-medio: #C8F560;
+    --cor-roxo-suave: #16221C;
+    --cor-roxo-suave-hover: #243229;
+    --cor-acento: #C8F560;
+    --cor-acento-forte: #C8F560;
+    --cor-acento-suave: #243229;
+    --cor-texto-escuro: #0E1713;
+    --cor-texto-medio: #9BAA9F;
+    --font-texto: 'Outfit', sans-serif;
+    --font-ti­tulo: 'Space Grotesk', sans-serif;
+    --fonte-nav: 'Outfit', sans-serif;
+    --fonte-span: 'JetBrains Mono', monospace;
+    --dark: #0E1713;
+    --white: #EEF2EA;
+    --purple: #C8F560;
+    --gray: #9BAA9F;
+    --gray2: #243229;
 }
 
 body>header {
@@ -143,7 +176,7 @@ body>header ul li a:hover {
 .banner h1 {
     color: #f0f0f0;
     font-size: 3rem;
-    font-family: var(--font-título);
+    font-family: var(--font-ti­tulo);
 }
 
 .banner .left p {
@@ -187,7 +220,7 @@ body>header ul li a:hover {
 .banner .topo p {
     color: #f0f0f0;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-span);
     margin-left: 10px;
 
 }
@@ -214,7 +247,7 @@ body>header ul li a:hover {
 .banner .conteudo li h3 {
     color: #0a9458;
     margin: 10px 0;
-    font-family: var(--fonte-nav);
+    font-family: var(--font-ti­tulo);
 }
 
 
@@ -250,7 +283,7 @@ body>header ul li a:hover {
 .banner .fundo p {
     color: #f0f0f0;
     font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-span);
     text-align: center;
 
 }
@@ -258,7 +291,7 @@ body>header ul li a:hover {
 
 
 
-/* TEXTO RANDÔMICO */
+/* TEXTO RANDÃ”MICO */
 
 
 
@@ -441,7 +474,7 @@ body>header ul li a:hover {
 
 
 
-/*estilizaçao do card*/
+/*estilizaÃ§ao do card*/
 
 .sobre .card article {
     background-color: #fff;
@@ -460,7 +493,7 @@ body>header ul li a:hover {
     font-size: 22px;
     color: #111;
     margin: 15px 0;
-    font-family: var(--font-título);
+    font-family: var(--font-ti­tulo);
 }
 
 .sobre .card article p {
@@ -553,7 +586,7 @@ PARTE GABRIELE
     font-weight: 700;
     line-height: 1.25;
     text-transform: none;
-    font-family: var(--font-título);
+    font-family: var(--font-ti­tulo);
 }
 
 .grupo-card,
@@ -753,7 +786,7 @@ PARTE GABRIELE
     font-weight: 700;
     line-height: 1.25;
     text-transform: none;
-    font-family: var(--font-título);
+    font-family: var(--font-ti­tulo);
 }
 
 .processo-site-etiqueta {
@@ -1127,7 +1160,7 @@ PARTE GABRIELE
 .portfolio h2 {
     color: #13405c;
     font-size: 40px;
-    font-family: var(--font-título);
+    font-family: var(--font-ti­tulo);
     font-weight: bold;
     margin-top: 50px;
 }
@@ -1205,7 +1238,7 @@ PARTE GABRIELE
     align-self: flex-end;
     margin: 40px 30px;
 
-    /* PERSONALIZAÇÃO FUNDO LUPA */
+    /* PERSONALIZAÃ‡ÃƒO FUNDO LUPA */
 
     opacity: .8;
 }
@@ -1249,7 +1282,7 @@ PARTE GABRIELE
     color: #eaf9fa;
 
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-texto);
     font-weight: 600;
     text-transform: uppercase;
 
@@ -1259,7 +1292,7 @@ PARTE GABRIELE
 .info-container p {
     color: #ffffff;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-texto);
     font-weight: 500;
     text-indent: 12px;
     line-height: 20px;
@@ -1316,7 +1349,7 @@ PARTE GABRIELE
     font-size: 32px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    font-family: var(--font-título);
+    font-family: var(--font-ti­tulo);
 }
 
 .Faq-text p {
@@ -1519,7 +1552,7 @@ PARTE GABRIELE
 
 
 /******            ******/
-/******   RODAPÉ   ******/
+/******   RODAPÃ‰   ******/
 /******            ******/
 
 .rodape {
@@ -1569,7 +1602,7 @@ PARTE GABRIELE
 .rodape .esquerda h3,
 .rodape .direita h3 {
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-texto);
     color: #e9c3ff;
 
     text-transform: uppercase;
@@ -1578,7 +1611,7 @@ PARTE GABRIELE
 .rodape .esquerda a,
 .rodape .direita a {
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-texto);
     color: #bbb1d6;
 
     text-decoration: none;
@@ -1605,7 +1638,7 @@ PARTE GABRIELE
 
 .rodape .centro h3 {
     font-size: 28px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-texto);
     color: #ffffff;
     font-weight: 500;
     text-transform: uppercase;
@@ -1639,7 +1672,7 @@ PARTE GABRIELE
     padding: 0;
 
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-texto);
     text-transform: uppercase;
 }
 
@@ -1671,7 +1704,7 @@ PARTE GABRIELE
     border: 1px solid #000;
 
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-texto);
     text-transform: uppercase;
 }
 
@@ -1682,7 +1715,7 @@ PARTE GABRIELE
 .rodape .btn-form {
     font-size: 18px;
     letter-spacing: 2px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-texto);
     color: #0a2b40;
 
     text-transform: uppercase;
@@ -1735,7 +1768,7 @@ PARTE GABRIELE
 
 .rodape .linha-final p {
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-texto);
     color: #fff;
     letter-spacing: 1px;
 }
@@ -1751,7 +1784,7 @@ PARTE GABRIELE
 
 
 
-/* AVALIAÇÃO */
+/* AVALIAÃ‡ÃƒO */
 
 .depoimento{
     display: flex;
@@ -1807,4 +1840,262 @@ PARTE GABRIELE
     font-family: var(--font-texto);
     color: #222;
     margin: 0;
+}
+
+/* Paleta Sintonia: rádio, sintonia e contraste */
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+}
+
+body > header {
+    background-color: var(--cor-fundo);
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+body > header ul li a,
+.rodape .linha-final p,
+.banner h1,
+.banner .left p {
+    color: var(--cor-texto-principal);
+}
+
+body > header ul li a:hover {
+    color: var(--cor-secundaria);
+}
+
+.banner {
+    background: radial-gradient(ellipse at 80% 20%, #243229 0, #16221C 38%, #0E1713 78%);
+}
+
+.banner a,
+.botao,
+.rodape .btn-form {
+    background: var(--cor-primaria);
+    color: var(--cor-fundo);
+}
+
+.banner a:hover,
+.botao:hover,
+.rodape .btn-form:hover {
+    background: var(--cor-secundaria);
+    color: var(--cor-fundo);
+}
+
+.banner .topo,
+.banner .fundo {
+    background-color: var(--cor-superficie);
+}
+
+.banner .conteudo {
+    background: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+}
+
+.banner .topo p,
+.banner .fundo p,
+.banner .conteudo li span {
+    color: var(--cor-texto-secundario);
+}
+
+.banner .conteudo li h3 {
+    color: var(--cor-primaria);
+}
+
+.sobre {
+    background: var(--cor-secao-clara) !important;
+    color: var(--cor-fundo);
+}
+
+.sobre .texto p {
+    color: var(--cor-fundo);
+}
+
+.sobre .card article {
+    background: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+}
+
+.sobre .card article h4,
+.sobre .card article p {
+    color: var(--cor-texto-principal);
+}
+
+.equipe,
+.processo-site,
+.FAQ,
+.depoimento {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+}
+
+.equipe h2,
+.linha-tempo h2,
+.processo-site h2,
+.portfolio h2,
+.portfolio h3,
+.Faq-text h2,
+.modal-equipe-texto h3 {
+    color: var(--cor-primaria);
+}
+
+.card-base,
+.processo-site-painel,
+.modal-equipe-conteudo {
+    background: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    color: var(--cor-texto-principal);
+}
+
+.info-equipe,
+.info-equipe span,
+.modal-equipe-texto,
+.processo-site-painel-texto {
+    color: var(--cor-texto-secundario);
+}
+
+.redes-sociais a,
+.processo-site-etapa {
+    background: var(--cor-superficie);
+    border-color: var(--cor-borda);
+}
+
+.redes-sociais a:hover,
+.processo-site-etapa:hover {
+    border-color: var(--cor-secundaria);
+}
+
+.processo-site-etiqueta,
+.processo-site-trilha-progresso,
+.processo-site-etapa-circulo,
+.processo-site-painel-numero {
+    border-color: var(--cor-borda);
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+}
+
+.processo-site-etapa.is-active,
+.processo-site-etapa.is-concluida {
+    border-color: var(--cor-primaria);
+    background: #243229;
+}
+
+.processo-site-painel-legenda {
+    color: var(--cor-texto-secundario);
+}
+
+.portfolio {
+    color: var(--cor-texto-principal);
+}
+
+.carrossel article {
+    border-color: var(--cor-borda);
+}
+
+.carrossel article a img {
+    background: var(--cor-primaria);
+}
+
+.info-container {
+    background-color: rgba(14, 23, 19, 0.9);
+}
+
+.info-container h4,
+.info-container p,
+.Faq-text {
+    color: var(--cor-texto-principal);
+}
+
+.carrossel .slick-dots li.slick-active button:before {
+    color: var(--cor-primaria);
+}
+
+.FAQ .ac {
+    border-color: var(--cor-borda);
+    background: var(--cor-superficie);
+}
+
+.FAQ .ac .ac-trigger,
+.FAQ .ac .ac-panel .ac-text {
+    color: var(--cor-texto-principal);
+    font-family: var(--font-texto);
+}
+
+.FAQ .ac .ac-trigger:hover,
+.FAQ .ac .ac-trigger:focus {
+    color: var(--cor-primaria);
+}
+
+.depoimento article {
+    border-color: var(--cor-borda);
+    background: var(--cor-superficie);
+}
+
+.depoimento h3 {
+    color: var(--cor-primaria);
+}
+
+.depoimento span {
+    color: var(--cor-texto-secundario);
+}
+
+.rodape {
+    background: var(--cor-fundo);
+    border-top: 1px solid var(--cor-borda);
+}
+
+.rodape .esquerda,
+.rodape .direita,
+.rodape .centro {
+    background: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.24);
+}
+
+.rodape .esquerda h3,
+.rodape .direita h3,
+.rodape .centro h3 {
+    color: var(--cor-texto-principal);
+}
+
+.rodape .esquerda a,
+.rodape .direita a {
+    color: var(--cor-texto-secundario);
+}
+
+.rodape .esquerda a:hover,
+.rodape .direita a:hover {
+    color: var(--cor-secundaria);
+}
+
+.rodape .form-campo,
+.rodape .centro form textarea {
+    background: var(--cor-fundo);
+    border-color: var(--cor-borda);
+    color: var(--cor-texto-principal);
+}
+
+.rodape .form-campo input,
+.rodape .centro form textarea {
+    color: var(--cor-texto-principal);
+}
+
+:focus-visible {
+    outline-color: var(--cor-primaria);
+}
+
+.rodape .form-campo input::placeholder,
+.rodape .centro form textarea::placeholder {
+    color: var(--cor-texto-secundario);
+}
+
+.rodape .linha-final {
+    background: var(--cor-superficie);
+}
+
+.rodape .linha-final span {
+    background: none;
+    color: var(--cor-primaria);
+    -webkit-text-fill-color: var(--cor-primaria);
+    -webkit-text-stroke: 0;
 }
