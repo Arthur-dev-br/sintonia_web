@@ -303,7 +303,7 @@ body>header ul li a:hover {
     white-space: nowrap;
     overflow: hidden;
     width: 0;
-    animation: mark .5s step-end infinite, write 20s steps(22, end) infinite;
+    animation: mark .5s step-end infinite, write 20s steps(25, end) infinite;
 }
 
 
@@ -317,7 +317,7 @@ body>header ul li a:hover {
     white-space: nowrap;
     overflow: hidden;
     width: 0;
-    animation: mark2 .5s step-end infinite, write2 25s steps(22, end) infinite;
+    animation: mark2 .5s step-end infinite, write2 22s steps(25, end) infinite;
 }
 
 @keyframes mark {
@@ -328,11 +328,11 @@ body>header ul li a:hover {
 
 @keyframes write {
     20% {
-        width: 31ch;
+        width: 40ch;
     }
 
     70% {
-        width: 31ch;
+        width: 40ch;
     }
 
     85% {
@@ -353,11 +353,11 @@ body>header ul li a:hover {
 
 @keyframes write2 {
     20% {
-        width: 31ch;
+        width: 40ch;
     }
 
     70% {
-        width: 31ch;
+        width: 40ch;
     }
 
     85% {
@@ -586,15 +586,13 @@ PARTE GABRIELE
     font-family: var(--font-ti­tulo);
 }
 
-.grupo-card,
-.linha-tempo ol {
+.grupo-card {
     display: grid;
-    grid-template-columns: repeat(4, minmax(220px, 250px));
+    grid-template-columns: repeat(3, minmax(220px, 250px));
     justify-content: center;
-    gap: 60px;
+    gap: 40px;
     align-items: start;
 }
-
 .card-equipe {
     position: relative;
     width: 100%;
@@ -1194,7 +1192,7 @@ PARTE GABRIELE
 
 
 .carrossel .slick-slide>div {
-    height: 35%;
+    height: 40%;
 }
 
 .carrossel article {
@@ -1211,12 +1209,12 @@ PARTE GABRIELE
 }
 
 .box1 {
-    background-image: url(../assets/atlas.jpg);
+    background-image: url(../assets/Pingo\ Decor.png);
 
 }
 
 .box2 {
-    background-image: url(../assets/anamalis.png);
+    background-image: url(../assets/Pedreiro.png);
 
 }
 
@@ -1226,7 +1224,7 @@ PARTE GABRIELE
 }
 
 .box4 {
-    background-image: url(../assets/rosa-fisio.png);
+    background-image: url(../assets/Projeto\ jhown.png);
 
 }
 
