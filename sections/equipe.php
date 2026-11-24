@@ -2,10 +2,14 @@
 
 
 
+
+
         <!-- <section class="box-equipe">
     
 </section> -->
-        <section class="equipe" id="equipe" style="   background: #45368c;">
+        <section class="equipe" id="equipe">
+            <div class="sintonia-wave sintonia-wave--bg" aria-hidden="true"><canvas></canvas></div>
+
             <div class="equipe-conteudo">
                 <h2>Conheça a equipe que irá desenvolver seu projeto</h2>
 

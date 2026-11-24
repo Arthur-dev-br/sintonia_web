@@ -349,3 +349,99 @@ if (depoimento && window.jQuery && window.jQuery.fn && window.jQuery.fn.slick) {
     });
   }
 }
+
+(function () {
+  // Cores: edite aqui
+  var GREEN = '#35F28B', AMBER = '#FFB347';
+  var TICK = '53,242,139'; // verde em RGB, usado nas marcas do "dial"
+
+  var LAYERS = [
+    { amp: .30, cycles: 1.5, speed:  1.1, width: 3,   color: GREEN, alpha: 1,   glow: 16, phase: 0 },
+    { amp: .22, cycles: 2.3, speed: -.8,  width: 2,   color: GREEN, alpha: .5,  glow: 8,  phase: 1.7 },
+    { amp: .14, cycles: 3.6, speed: 1.6,  width: 1.5, color: AMBER, alpha: .75, glow: 8,  phase: 3.1 },
+    { amp: .10, cycles: 5.2, speed: -1.2, width: 1,   color: GREEN, alpha: .3,  glow: 0,  phase: 4.4 }
+  ];
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function init(root) {
+    var canvas = root.querySelector('canvas');
+    var ctx = canvas.getContext('2d');
+    var w = 0, h = 0, raf = 0, t0 = performance.now();
+
+    function resize() {
+      var dpr = Math.min(window.devicePixelRatio || 1, 2);
+      var r = canvas.getBoundingClientRect();
+      w = r.width; h = r.height;
+      canvas.width = w * dpr; canvas.height = h * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      if (!raf) draw(2); // redesenha um quadro parado
+    }
+
+    function yAt(L, nx, t) {
+      var edge = Math.pow(Math.sin(Math.PI * nx), .6);
+      var breathe = .6 + .4 * Math.sin(t * .55 + L.phase);
+      var wobble = .75 + .25 * Math.sin(nx * 6 + t * .7 + L.phase);
+      return h / 2 + Math.sin(nx * L.cycles * Math.PI * 2 + t * L.speed * 2 + L.phase)
+             * h * L.amp * edge * breathe * wobble;
+    }
+
+    function draw(t) {
+      ctx.clearRect(0, 0, w, h);
+
+      // linha central
+      ctx.strokeStyle = 'rgba(' + TICK + ',.12)';
+      ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(0, h / 2 + .5); ctx.lineTo(w, h / 2 + .5); ctx.stroke();
+
+      // marcas de dial de rádio
+      for (var x = 0; x <= w; x += 16) {
+        var major = Math.round(x / 16) % 5 === 0;
+        ctx.strokeStyle = 'rgba(' + TICK + ',' + (major ? .35 : .15) + ')';
+        ctx.beginPath(); ctx.moveTo(x + .5, h); ctx.lineTo(x + .5, h - (major ? 14 : 7)); ctx.stroke();
+      }
+
+      // ondas
+      LAYERS.forEach(function (L) {
+        ctx.save();
+        ctx.globalAlpha = L.alpha;
+        ctx.strokeStyle = L.color;
+        ctx.lineWidth = L.width;
+        ctx.lineCap = ctx.lineJoin = 'round';
+        ctx.shadowColor = L.color;
+        ctx.shadowBlur = L.glow;
+        ctx.beginPath();
+        for (var px = 0; px <= w; px += 3) {
+          var y = yAt(L, px / w, t);
+          if (px === 0) ctx.moveTo(px, y); else ctx.lineTo(px, y);
+        }
+        ctx.stroke();
+        ctx.restore();
+      });
+
+      // ponto âmbar percorrendo a onda principal (como no logo)
+      var dx = ((t * .07) % 1) * w;
+      ctx.save();
+      ctx.fillStyle = AMBER; ctx.shadowColor = AMBER; ctx.shadowBlur = 14;
+      ctx.beginPath(); ctx.arc(dx, yAt(LAYERS[0], dx / w, t), 4, 0, Math.PI * 2); ctx.fill();
+      ctx.restore();
+    }
+
+    function frame(now) { draw((now - t0) / 1000); raf = requestAnimationFrame(frame); }
+    function play()  { if (!raf && !reduce) raf = requestAnimationFrame(frame); }
+    function pause() { cancelAnimationFrame(raf); raf = 0; }
+
+    if ('ResizeObserver' in window) new ResizeObserver(resize).observe(root);
+    else window.addEventListener('resize', resize);
+    resize();
+
+    // só anima quando estiver visível na tela (economiza bateria)
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (e) { e[0].isIntersecting ? play() : pause(); }).observe(root);
+    } else { play(); }
+  }
+
+  document.querySelectorAll('.sintonia-wave').forEach(init);
+})();
+
+
