@@ -1920,7 +1920,7 @@ body > header ul li a:hover {
 .processo-site,
 .FAQ,
 .depoimento {
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-superficie);
     color: var(--cor-texto-principal);
 }
 
@@ -2195,4 +2195,62 @@ body > header nav ul li a:focus-visible::after {
   opacity: .4;
   pointer-events: none;
   z-index: 0;
+}
+
+/* Interações de hover alinhadas à identidade visual da Sintonia */
+:root {
+    --duracao-hover: 220ms;
+    --curva-hover: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.banner a,
+.botao,
+#btn-submit,
+.rodape .btn-form,
+.card-equipe .card-foto,
+.card-equipe .card-base,
+.card-equipe .info-equipe,
+.processo-site-etapa,
+.redes-sociais a,
+.rodape .esquerda,
+.rodape .direita,
+.carrossel article a img {
+    transition-duration: var(--duracao-hover);
+    transition-timing-function: var(--curva-hover);
+}
+
+.banner a:hover,
+.botao:hover,
+#btn-submit:hover,
+.rodape .btn-form:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px color-mix(in srgb, var(--cor-primaria) 20%, transparent);
+}
+
+.card-equipe:hover .card-foto,
+.card-equipe:hover .card-base,
+.card-equipe:hover .info-equipe,
+.processo-site-etapa:hover,
+.redes-sociais a:hover,
+.rodape .esquerda:hover,
+.rodape .direita:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.carrossel article a img:hover {
+    transform: scale(1.04);
+}
+
+.redeSocial img:hover {
+    transform: scale(1.08);
+    box-shadow: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
 }
