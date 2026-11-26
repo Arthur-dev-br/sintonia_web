@@ -470,6 +470,7 @@ body>header ul li a:hover {
 
     max-width: 1200px;
     margin: 50px auto;
+    padding-bottom: 50px;
 }
 
 
@@ -1897,6 +1898,10 @@ body > header ul li a:hover {
     color: var(--cor-primaria);
 }
 
+.sobre{
+     background: radial-gradient(ellipse at 80% 20%, #243229 0, #16221C 38%, #0E1713 78%);
+}
+
 .sobre {
     background: var(--cor-superficie) !important;
     color: var(--cor-fundo);
@@ -2197,7 +2202,7 @@ body > header nav ul li a:focus-visible::after {
   z-index: 0;
 }
 
-/* InteraÁıes de hover alinhadas ‡ identidade visual da Sintonia */
+/* InteraÔøΩÔøΩes de hover alinhadas ÔøΩ identidade visual da Sintonia */
 :root {
     --duracao-hover: 220ms;
     --curva-hover: cubic-bezier(0.2, 0.7, 0.2, 1);
@@ -2253,4 +2258,9 @@ body > header nav ul li a:focus-visible::after {
         transition-duration: 0.01ms !important;
         animation-duration: 0.01ms !important;
     }
+}
+
+/* Mant√©m a transi√ß√£o visual continua entre o banner e a se√ß√£o sobre. */
+.sobre {
+    background: radial-gradient(ellipse at 80% 20%, #243229 0, #16221C 38%, #0E1713 78%) !important;
 }

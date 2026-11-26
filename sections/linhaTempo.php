@@ -1,4 +1,4 @@
-<section class="processo-site" aria-labelledby="processo-site-titulo" style="   background: #45368c;">
+<section class="processo-site" aria-labelledby="processo-site-titulo">
             <div class="processo-site-cabecalho">
                 <p class="processo-site-etiqueta">Processo de desenvolvimento</p>
                 <h2 id="processo-site-titulo">Entenda como tiramos o seu projeto do papel até a publicação</h2>
