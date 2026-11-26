@@ -8,6 +8,7 @@
     
 </section> -->
         <section class="equipe" id="equipe">
+            <div class="sintonia-wave sintonia-wave--bg" aria-hidden="true"><canvas></canvas></div>
             <div class="equipe-conteudo">
                 <h2>Conheça a equipe que irá desenvolver seu projeto</h2>
 
@@ -28,14 +29,14 @@
                             <div class="card-extra">
                                 <nav class="redes-sociais" aria-label="Redes Sociais de Gabriele Cassiano">
                                     <a href="#" data-placeholder-link aria-label="Whatsapp">
-                                        <img src="assets/whatsapp-roxo.png" alt="Logo Whatsapp">
+                                        <img src="assets/whatsapp.png" alt="Logo Whatsapp">
                                     </a>
                                     <a href="#" data-placeholder-link aria-label="Instagram">
-                                        <img src="assets/instagram-roxo.png" alt="Logo Instagram">
+                                        <img src="assets/instagram.png" alt="Logo Instagram">
                                     </a>
                                     <a href="https://www.linkedin.com/in/gabriele-dos-santos-cassiano-0bb403379"
                                         target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
-                                        <img src="assets/linkedin-roxo.png" alt="Logo LinkedIn">
+                                        <img src="assets/linkedin.png" alt="Logo LinkedIn">
                                     </a>
                                 </nav>
 
@@ -62,13 +63,13 @@
                             <div class="card-extra">
                                 <nav class="redes-sociais" aria-label="Redes Sociais do Integrante 2">
                                     <a href="#" data-placeholder-link aria-label="Whatsapp">
-                                        <img src="assets/whatsapp-roxo.png" alt="Logo Whatsapp">
+                                        <img src="assets/whatsapp.png" alt="Logo Whatsapp">
                                     </a>
                                     <a href="#" data-placeholder-link aria-label="Instagram">
-                                        <img src="assets/instagram-roxo.png" alt="Logo Instagram">
+                                        <img src="assets/instagram.png" alt="Logo Instagram">
                                     </a>
                                     <a href="#" data-placeholder-link aria-label="LinkedIn">
-                                        <img src="assets/linkedin-roxo.png" alt="Logo LinkedIn">
+                                        <img src="assets/linkedin.png" alt="Logo LinkedIn">
                                     </a>
                                 </nav>
 
@@ -95,13 +96,13 @@
                             <div class="card-extra">
                                 <nav class="redes-sociais" aria-label="Redes Sociais do Integrante 3">
                                     <a href="#" data-placeholder-link aria-label="Whatsapp">
-                                        <img src="assets/whatsapp-roxo.png" alt="Logo Whatsapp">
+                                        <img src="assets/whatsapp.png" alt="Logo Whatsapp">
                                     </a>
                                     <a href="#" data-placeholder-link aria-label="Instagram">
-                                        <img src="assets/instagram-roxo.png" alt="Logo Instagram">
+                                        <img src="assets/instagram.png" alt="Logo Instagram">
                                     </a>
                                     <a href="#" data-placeholder-link aria-label="LinkedIn">
-                                        <img src="assets/linkedin-roxo.png" alt="Logo LinkedIn">
+                                        <img src="assets/linkedin.png" alt="Logo LinkedIn">
                                     </a>
                                 </nav>
 

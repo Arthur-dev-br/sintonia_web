@@ -92,7 +92,3 @@
 
 
         </section>
-
-        <div class="secao-onda secao-onda-invertida" aria-hidden="true">
-            <img src="assets/onda-equipe.svg" alt="">
-        </div>

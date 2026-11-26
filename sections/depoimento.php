@@ -1,5 +1,10 @@
 <!-- depoimento -->
-        <section class="depoimento" >
+        <section class="depoimento" aria-labelledby="depoimento-titulo">
+            <header class="depoimento-cabecalho">
+                <span class="depoimento-etiqueta">Quem confia na Sintonia</span>
+                <h2 id="depoimento-titulo">Histórias de quem já trabalhou com a gente</h2>
+                <p>Veja como transformamos boas ideias em experiências digitais.</p>
+            </header>
             <article>
                 
                 <div class="cliente">

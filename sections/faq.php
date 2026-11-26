@@ -1,5 +1,6 @@
 <!-- perguntas frequentes -->
         <section class="FAQ">
+            <div class="faq-frequencia" aria-hidden="true"><canvas></canvas></div>
             <div class="Faq-text">
                 <h2>
                     PERGUNTAS FREQUENTES
